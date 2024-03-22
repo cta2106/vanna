@@ -397,9 +397,9 @@ class VannaFlaskApp:
             return "File not found", 404
 
         # Proxy the /vanna.svg file to the remote server
-        @self.flask_app.route("/vanna.svg")
-        def proxy_vanna_svg():
-            remote_url = f"https://vanna.ai/img/vanna.svg"
+        @self.flask_app.route("/silverlake.svg")
+        def proxy_silverlake_svg():
+            remote_url = f"https://www.silverlake.com/wp-content/uploads/2022/07/silverlake_logo_white.svg"
             response = requests.get(remote_url, stream=True)
 
             # Check if the request to the remote URL was successful
